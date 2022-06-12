@@ -275,7 +275,13 @@ class OhDear_Settings {
                     'name' => __( 'Grant Access', 'ohdear' ),
                     'type' => 'multiselect',
                     'desc' => __( 'Select which user roles can access the Oh Dear monitoring (administrators have access by default)', 'ohdear' )
-                )
+                ),
+                
+                'cron_monitor_webhook' => array(
+                    'name' => __( 'Cron Monitor Pingback URL', 'ohdear' ),
+                    'type' => 'text',
+                    'desc' => __( 'Enter the pingback URL Oh Dear provides for cron monitoring', 'ohdear' ),
+                ),
             )
         );
     }
